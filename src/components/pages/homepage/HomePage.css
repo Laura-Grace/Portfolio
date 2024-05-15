@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa:wght@300..700&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa:wght@300..700&family=Monoton&family=Righteous&display=swap');
+
+#mainBody{
+    background-color: #E9CDA5;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+#mainBody h2 {
+    font-family: comfortaa;
+    font-size: 1.4em;
+    color: #623412;
+}
+
+#mainBody h1 {
+    font-family: righteous;
+    font-size: 5em;
+    margin-top: 10%;
+    color: #623412;
+}
+
+#profile {
+    position: absolute;
+    height: 40%;
+    width: 22%;
+    right: 77%;
+    bottom: 56%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#circle {
+    border-radius: 50%;
+    background-color: #E68699;
+    height: 380px;
+    width: 380px;
+    position: absolute;
+    bottom: 53%;
+    right: 77%;
+}
+
+#line {
+    height: 4px;
+    width: 500px;
+    background-color: #DB6B30;
+    top: 39%;
+    position: absolute;
+}
+
+#brown {
+    height: 10px;
+    width: 90%;
+    background-color:#623412;
+    position: absolute;
+    left: 10%;
+    top: 85%;
+}
+#pink {
+    height: 10px;
+    width: 90%;
+    background-color:#E68699;
+    position: absolute;
+    left: 10%;
+    top: 88%;
+}
+#green {
+    height: 10px;
+    width: 90%;
+    background-color:#D2B467;
+    position: absolute;
+    left: 10%;
+    top: 91%;
+}
+#white {
+    height: 10px;
+    width: 90%;
+    background-color: #F5DADF;
+    position: absolute;
+    left: 10%;
+    top: 94%;
+}
+
+#homeBtn {
+    background-color: #E68699;
+    position: absolute;
+    bottom: 35%;
+    right: 43%;
+    height: 50px;
+    width: 180px;
+    margin-top: 10%;
+    font-family: comfortaa;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+    border-radius: 5%;
+}
+
+#homeBtn:active {
+    background-color: #eb9fae;
+    height: 48px;
+    width: 178px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}

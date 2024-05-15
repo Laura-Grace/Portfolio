@@ -1,0 +1,76 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa:wght@300..700&display=swap');
+
+/* Remove margin and padding from the body */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Reset default list styles */
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Apply styles to the navbar */
+  nav {
+    background-color: #DB6B30;
+    width: 100%; /* Ensure navbar stretches across the screen */
+    height: 50px;
+    position: fixed; /* Fixed position to keep navbar at the top */
+    top: 0; /* Position navbar at the top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  nav p {
+    margin: 0;
+    color: #623412;
+    font-family: 'Audiowide', cursive; /* Use Audiowide font */
+    font-size: 24px; /* Adjust font size */
+  }
+  /* Align links to the right */
+  ul {
+    margin: 0;
+    padding: 0;
+    padding-right: 50px;
+    list-style: none;
+    display: flex; /* Use flexbox to align items */
+  }
+  
+  /* Style for navbar links */
+  li {
+    margin-right: 10px;
+  }
+  
+  /* Remove default link styles */
+  nav ul li a {
+    text-decoration: none;
+    color: #623412;
+    font-family: 'Comfortaa', sans-serif; /* Use Comfortaa font */
+    font-weight: bold;
+}
+  
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin from the last link */
+}
+
+  nav ul li::after {
+    content: "|"; /* Add the '|' character */
+    color: #E68699; /* Set the color of the '|' separator */
+    margin-left: 5px; /* Adjust the spacing between the '|' separator and the link */
+  }
+
+
+  nav ul li a:hover {
+    color: #E68699;
+  }
+
+  nav ul li:last-child::after {
+    content: ""; /* Remove the '|' separator from the last link */
+}

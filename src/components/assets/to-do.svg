@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 522 664">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #db6b30;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-width: 0px;
+      }
+
+      .cls-2, .cls-7 {
+        fill: #623412;
+      }
+
+      .cls-3 {
+        fill: #d2b467;
+      }
+
+      .cls-4 {
+        fill: #c9a9b1;
+      }
+
+      .cls-5 {
+        fill: #f5dadf;
+      }
+
+      .cls-6 {
+        fill: #e68699;
+      }
+
+      .cls-7 {
+        font-family: InputMono-Bold, 'Input Mono';
+        font-size: 67.36px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <rect class="cls-5" width="522" height="664"/>
+  <rect class="cls-3" y="361" width="522" height="61"/>
+  <rect class="cls-6" y="422" width="522" height="61"/>
+  <rect class="cls-1" y="483" width="522" height="61"/>
+  <rect class="cls-2" y="544" width="522" height="61"/>
+  <rect class="cls-4" x="13" y="22" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="55.89" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="89.78" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="123.67" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="157.56" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="191.44" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="225.33" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="259.22" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="293.11" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="327" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="360.89" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="394.78" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="428.67" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="462.56" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="496.44" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="530.33" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="564.22" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="598.11" width="11" height="11"/>
+  <rect class="cls-4" x="13" y="632" width="11" height="11"/>
+  <text class="cls-7" transform="translate(104.95 157.15)"><tspan x="0" y="0">To - Do</tspan></text>
+</svg>
