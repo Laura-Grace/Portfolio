@@ -122,3 +122,16 @@
     border-color: transparent;
 
 }
+
+
+/*To-do list css*/
+
+#todoModal {
+    background-color: #fcf5f6;
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    top: 20%;
+    left: 25%;
+    border-radius: 20px;
+}
