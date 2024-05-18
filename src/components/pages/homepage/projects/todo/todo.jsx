@@ -1,23 +1,56 @@
 import React, { useState } from "react";
 import './todo.css';
+import todoImg from '../../../../assets/todoImg.png';
 
 const TodoList = () => {
-    const [heading, setHeading] = useState("Todo List");
+    const [tasks, setTasks] = useState([]);
+    const [taskInput, setTaskInput] = useState("");
+
+    const addTask = () => {
+        if (taskInput.trim() !== "") {
+            setTasks([...tasks, { text: taskInput, completed: false }]);
+            setTaskInput("");
+        }
+    };
+
+    const toggleTask = (index) => {
+        const newTasks = tasks.map((task, i) => {
+            if (i === index) {
+                return { ...task, completed: !task.completed };
+            }
+            return task;
+        });
+        setTasks(newTasks);
+    };
 
     return (
         <div>
+            <img id="towig" src={todoImg} alt="Todo"/>
             <div id='row'>
-            <input placeholder='What will you do today?' />
-            <button id='task'>Add Task</button>
+                <input
+                    placeholder='What will you do today?'
+                    value={taskInput}
+                    onChange={(e) => setTaskInput(e.target.value)}
+                />
+                <button id='task' onClick={addTask}>Add Task</button>
             </div>
-            <div class='listItems'>
-                <ul class='todo-list'>
-                    <li><div class='uncheck'></div>Item 1</li>
-                    <li><div class='uncheck'></div>Item 2</li>
+            <div className='listItems'>
+                <ul className='todo-list'>
+                    {tasks.map((task, index) => (
+                        <li
+                            key={index}
+                            className={task.completed ? 'done' : ''}
+                            onClick={() => toggleTask(index)}
+                        >
+                            <div className={task.completed ? 'check' : 'uncheck'}></div>
+                            {task.text}
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>
-    )
+    );
 };
 
 export default TodoList;
+

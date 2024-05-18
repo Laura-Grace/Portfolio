@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import clock from '../../../assets/clock.png'; 
+import clock2 from '../../../assets/clock2.png'; 
 import calculator from '../../../assets/calculator.png';
-import todo from '../../../assets/todo.png';
+import todoImg from '../../../assets/todoImg.png';
 import weather from '../../../assets/weather.png'; // Correct relative path
 import './Projects.css';
 import WeatherComponent from "./WeatherComponent";
@@ -28,9 +28,9 @@ const Projects = () => {
     return (
         <div className="total">
             <div id='projectHolder'>
-                <div className='border'><img className='wigits' src={clock} alt="Clock" /></div>
+                <div className='border'><img className='wigits' src={clock2} alt="Clock" /></div>
                 <div className='border'><img className='wigits' src={calculator} alt="Calculator" /></div>
-                <div className='border'><button id='todoBtn' onClick={openTodoModal}><img className='wigits' src={todo} alt="To-Do" /></button></div>
+                <div className='border'><button id='todoBtn' onClick={openTodoModal}><img className='wigits' src={todoImg} alt="To-Do" /></button></div>
                 <div className='border'><button id='weatherBtn' onClick={openWeatherModal}><img className='wigits' src={weather} alt="Weather" /></button></div>
                 
             {isWeatherModalOpen && (

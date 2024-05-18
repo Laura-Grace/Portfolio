@@ -84,7 +84,7 @@
     border-bottom: 1px solid pink;
     width: 50%;
     margin-right: 15px;
-    color: pink;
+    color: #E68698;
 
 }
 
@@ -97,7 +97,7 @@
 }
 
 .weatherContent button:active {
-    border: 1px solid pink;
+    border: 1px solid #E68698;
     background-color: rgb(221, 130, 145);
     color: #FCF5F6;
     padding: 5px;
@@ -115,12 +115,18 @@
 .weatherContent input:focus {
     border-style: none;
     background-color: #FCF5F6; 
-    border-bottom: 1px solid pink;
+    border-bottom: 1px solid #E68698;
     width: 50%;
     margin-right: 15px;
-    color: pink;
+    color: #E68698;
     border-color: transparent;
 
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 

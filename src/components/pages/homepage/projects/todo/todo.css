@@ -54,8 +54,9 @@ input{
 
 .todo-list li{
     padding: 10px;
-    margin-left: 45px;
+    margin-left: 65px;
     font-size: 15px;
+    cursor: pointer;
 }
 
 
@@ -66,5 +67,33 @@ input{
     width: 15px;
     border-radius: 50%;
     position: absolute;
-    left: 4%;
+    left: 7%;
+}
+
+#towig {
+    height: 50px;
+    position: absolute;
+    top: -25px;
+    left: 28px;
+}
+
+#title {
+    margin-left: 80px;
+    top: 9px;
+}
+
+.check{
+    background-color: #DB6B30;
+    border: 1px solid #DB6B30;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 7%;
+    
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
 }
