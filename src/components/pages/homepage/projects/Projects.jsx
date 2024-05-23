@@ -7,11 +7,13 @@ import './Projects.css';
 import WeatherComponent from "./WeatherComponent";
 import TodoList from './todo/todo.jsx';
 import Calculator from './calculator/calculator.jsx';
+import DigitalClock from './clock/clock.jsx';
 
 const Projects = () => {
     const [isWeatherModalOpen, setIsWeatherModalOpen] = useState(false);
     const [isTodoOpen, setIsTodoOpen] = useState(false);
     const [isCalculatorOpen, setIsCalculatorOpen] = useState(false);
+    const [isClockOpen, setIsClockOpen] = useState(false);
 
     const openWeatherModal = () => setIsWeatherModalOpen(true);
     const closeWeatherModal = () => setIsWeatherModalOpen(false);
@@ -22,11 +24,16 @@ const Projects = () => {
     const openCalculator = () => setIsCalculatorOpen(true);
     const closeCalculator = () => setIsCalculatorOpen(false);
 
+    const openClock = () => setIsClockOpen(true);
+    const closeClock = () => setIsClockOpen(false);
+
     return (
         <div className="total">
             <div id='projectHolder'>
                 <div className='border'>
+                    <button id='clockBtn' onClick={openClock}>
                     <img className='wigits' src={clock2} alt="Clock" />
+                    </button>
                 </div>
                 <div className='border'>
                     <button id='calcBtn' onClick={openCalculator}>
@@ -71,6 +78,16 @@ const Projects = () => {
                             <span id='calcClose' onClick={closeCalculator}>&times;</span>
                             <h1 id='toHead'></h1>
                             <Calculator />
+                        </div>
+                    </div>
+                )}
+
+                {isClockOpen && (
+                    <div id='clockModal' className='modal'>
+                        <div className='clockContent'>
+                            <span id='clockClose' onClick={closeClock}>&times;</span>
+                            <h1 id='toHead'></h1>
+                            <DigitalClock />
                         </div>
                     </div>
                 )}

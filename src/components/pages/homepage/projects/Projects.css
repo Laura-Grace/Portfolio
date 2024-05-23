@@ -59,7 +59,8 @@ button img {
 
 #weatherModal,
 #todoModal, 
-#calcModal {
+#calcModal,
+#clockModal {
     background-color: #fcf5f6;
     position: fixed;
     width: 50%;
@@ -99,7 +100,6 @@ button img {
 .weatherContent input, .weatherContent button {
     font-size: 1rem;
     margin: 10px;
-    width:
 }
 
 .weatherContent input {
