@@ -1,7 +1,8 @@
+/* Main container styling */
 .total {
     background-color: #E9CDA5;
-    padding: 20px; /* Optional: Add padding to the container */
-    height: 100vh; /* Optional: Ensure it covers the full viewport height */
+    padding: 20px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,24 +11,55 @@
     color: #623412;
 }
 
-.wigits {
-    height: 100px;
-    width: auto;
-}
-
-.border {
-    border: 1px solid #623412  0.8;
-    display: inline-block;
-    padding: 15px;
-    margin: 15px;
-}
-
+/* Flexbox container for project items */
 #projectHolder {
     background-color: #E9CDA5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Add space between items */
 }
 
+/* Border class for each item */
+.border {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 15px;
+    width: 150px; /* Fixed width for borders */
+    height: 150px; /* Fixed height for borders */
+}
 
-#weatherModal {
+/* Widget class for images inside buttons */
+.wigits {
+    height: 100px;
+    width: auto; /* Fixed width for images */
+}
+
+/* Button styling */
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button img {
+    width: 100%; /* Ensure images take full width of button */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+/* Additional styling for modals, weather content, etc. */
+
+#weatherModal,
+#todoModal, 
+#calcModal {
     background-color: #fcf5f6;
     position: fixed;
     width: 50%;
@@ -37,11 +69,10 @@
     border-radius: 20px;
 }
 
-.weatherContent{
+.weatherContent {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
     height: 100%;
     width: 100%;
     color: pink;
@@ -49,8 +80,8 @@
 
 .close {
     position: absolute;
-    left: 90%;
-    bottom: 83%;
+    right: 10px;
+    top: 10px;
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
@@ -59,33 +90,23 @@
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Align horizontally */
-    align-items: center; /* Align vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.weatherContent p {
-    font-size: 20px;
-    position: absolute;
-}
-
-#banner {
-    height: 60px;
-    width: 100%;
-    background-color: pink;
-    position: absolute;
-    top: 0;
+/* Ensure inputs and buttons in weather modal are styled correctly */
+.weatherContent input, .weatherContent button {
+    font-size: 1rem;
+    margin: 10px;
+    width:
 }
 
 .weatherContent input {
-    border-style: none;
-    background-color: #FCF5F6; 
+    border: none;
     border-bottom: 1px solid pink;
     width: 50%;
-    margin-right: 15px;
     color: #E68698;
-
 }
 
 .weatherContent button {
@@ -96,48 +117,39 @@
     cursor: pointer;
 }
 
-.weatherContent button:active {
-    border: 1px solid #E68698;
-    background-color: rgb(221, 130, 145);
-    color: #FCF5F6;
-    padding: 5px;
-    cursor: pointer;
-    box-shadow: 4px 4px 5px #FFC0CB;
-}
 
 .weatherWig {
-    height: 15%;
+    max-width: 150px; /* Set a maximum width for the image */
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    position: relative; /* Ensure correct positioning */
+    top: 0; /* Adjust positioning if needed */
+    right: 40px;
+}
+
+.calcContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    border-radius: 15px;
+}
+
+#calcClose {
     position: absolute;
-    top: 10%;
-    left: 10%;
-}
-
-.weatherContent input:focus {
-    border-style: none;
-    background-color: #FCF5F6; 
-    border-bottom: 1px solid #E68698;
-    width: 50%;
-    margin-right: 15px;
-    color: #E68698;
-    border-color: transparent;
-
-}
-
-button{
-    background-color: transparent;
-    border: none;
+    right: 10px;
+    top: 10px;
+    font-size: 40px;
+    font-weight: bold;
     cursor: pointer;
-}
-
-
-/*To-do list css*/
-
-#todoModal {
-    background-color: #fcf5f6;
-    position: fixed;
-    width: 50%;
-    height: 50%;
-    top: 20%;
-    left: 25%;
-    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background: radial-gradient(circle at center, #d9e7ff 60%, #e3ffe7(255, 52, 113, 0) 70%);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -35,14 +35,14 @@ const WeatherComponent = () => {
           type="text"
           value={inputCity}
           onChange={(e) => setInputCity(e.target.value)}
-          placeholder="Enter city name"
+          placeholder="Enter city"
         />
         <button type="submit">Get Weather</button>
       </form>
       {weather ? (
         <div>
           <h2>Weather in {weather.name}</h2>
-          <p>Temperature: {weather.main.temp}°C</p><br></br>
+          <p>Temperature: {weather.main.temp}°C</p>
           <p>Weather: {weather.weather[0].description}</p>
         </div>
       ) : (
